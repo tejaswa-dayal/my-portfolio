@@ -1,19 +1,19 @@
 {
-    "totalExperience" : "1.6 years",
-    "experienceDetails" : [
-        {
-            "name" : "Webkolek", 
-            "startDate" : "Feb/2024",
-            "endDate" : "June/2024",
-            "designation" : "Software Developer",
-            "description" : "Developed key features for Edtech and Real Estate platforms, including a referral system, interactive quizzes using Django, Next.js and TailwindCSS, and an Admin Dashboard using Node.js, Prisma and MySQL."
-        },
-        {
-            "name" : "Echo Managed Services",
-            "startDate" : "Jan/2023",
-            "endDate" : "Feb/2024",
-            "designation" : "Software Engineer",
-            "description" : "Integrated SOAP endpoints, achieving 100% MUnit test coverage. Authored documentation, created a Global Error Handler, and developed POCs for Mulesoft Components. Ensured smooth data flow in integration projects."
-        }
-    ]
+  "totalExperience": "1.6 years",
+  "experienceDetails": [
+    {
+      "name": "Webkolek",
+      "startDate": "Feb/2024",
+      "endDate": "June/2024",
+      "designation": "Software Developer",
+      "description": "Developed key features for Edtech and Real Estate platforms, including a referral system, interactive quizzes using Django, Next.js and TailwindCSS, and an Admin Dashboard using Node.js, Prisma and MySQL."
+    },
+    {
+      "name": "Echo Managed Services",
+      "startDate": "Jan/2023",
+      "endDate": "Feb/2024",
+      "designation": "Software Engineer",
+      "description": "Integrated SOAP endpoints, achieving 100% MUnit test coverage. Authored documentation, created a Global Error Handler, and developed POCs for Mulesoft Components. Ensured smooth data flow in integration projects."
+    }
+  ]
 }

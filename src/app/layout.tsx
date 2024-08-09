@@ -19,7 +19,6 @@ import Link from "next/link";
 import { Toaster } from "react-hot-toast";
 import { metadata } from "@/metadata";
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,41 +76,41 @@ export default function RootLayout({
       </head>
       <body>
         <main className="p-6 md:p-12 xl:p-14 bg-primary min-h-[100vh]">
-        <div className="w-[100vw] px-8 py-4 rounded-xl bg-dark-grey/50 backdrop-blur-md shadow-lg ring-1 ring-black/5 z-20 fixed bottom-0 left-[50%] right-[50%] -translate-x-[50%] flex gap-6 justify-around items-center xl:hidden">
-        {Object.values(navHeadings).map((value, index) => (
-                    <button
-                      type="button"
-                      key={index}
-                      className={`hover:text-primary-icon cursor-pointer transition-colors max-sm:text-sm text-xl ${
-                        value == activeNavLink
-                          ? "text-primary-icon"
-                          : "text-primary-white"
-                      }`}
-                      onClick={() => handleNavLinkClick(value)}
-                    >
-                      {value}
-                    </button>
-                  ))}
-        </div>
+          <div className="w-[100vw] px-8 py-4 rounded-xl bg-dark-grey/50 backdrop-blur-md shadow-lg ring-1 ring-black/5 z-20 fixed bottom-0 left-[50%] right-[50%] -translate-x-[50%] flex gap-6 justify-around items-center xl:hidden">
+            {Object.values(navHeadings).map((value, index) => (
+              <button
+                type="button"
+                key={index}
+                className={`hover:text-primary-icon cursor-pointer transition-colors max-sm:text-sm text-xl ${
+                  value == activeNavLink
+                    ? "text-primary-icon"
+                    : "text-primary-white"
+                }`}
+                onClick={() => handleNavLinkClick(value)}
+              >
+                {value}
+              </button>
+            ))}
+          </div>
           <div className="flex justify-center max-xl:flex-col gap-8">
-          <Toaster
-            position="top-right"
-            reverseOrder={false}
-            toastOptions={{
-              success: {
-                style: {
-                  background: "#383839",
-                  color: "hsl(0, 0%, 98%)",
+            <Toaster
+              position="top-right"
+              reverseOrder={false}
+              toastOptions={{
+                success: {
+                  style: {
+                    background: "#383839",
+                    color: "hsl(0, 0%, 98%)",
+                  },
                 },
-              },
-              error: {
-                style: {
-                  background: "#383839",
-                  color: "hsl(0, 0%, 98%)",
+                error: {
+                  style: {
+                    background: "#383839",
+                    color: "hsl(0, 0%, 98%)",
+                  },
                 },
-              },
-            }}
-          />
+              }}
+            />
             <aside className="xl:w-[22%] border-primary-border">
               <div className="flex flex-col gap-4 bg-secondary max-xl:px-3 max-xl:rounded-3xl  rounded-2xl xl:items-center xl:justify-center py-4 xl:py-8 relative">
                 <div
@@ -147,9 +146,20 @@ export default function RootLayout({
                     <h3 className="bg-dark-grey py-[0.188rem] px-3 rounded-md text-center md:mt-1 text-secondary-white max-md:text-xs text-sm xl:w-[75%] self-center">
                       Software Developer
                     </h3>
-                    <a href="/resume/Resume.pdf" className="self-center mt-1 min-w-24 text-primary-icon text-sm md:text-xl text-center rounded-2xl px-4 py-1 outline outline-separator bg-transparent hover:bg-primary-icon hover:text-dark-grey transition-colors duration-300 ease-in-out" target="_blank" download={"Tejaswa_Resume"}><FontAwesomeIcon icon={faFileArrowDown} className="mr-[0.3rem]"/>Resume</a>
+                    <a
+                      href="/resume/Resume.pdf"
+                      className="self-center mt-1 min-w-24 text-primary-icon text-sm md:text-xl text-center rounded-2xl px-4 py-1 outline outline-separator bg-transparent hover:bg-primary-icon hover:text-dark-grey transition-colors duration-300 ease-in-out"
+                      target="_blank"
+                      download={"Tejaswa_Resume"}
+                    >
+                      <FontAwesomeIcon
+                        icon={faFileArrowDown}
+                        className="mr-[0.3rem]"
+                      />
+                      Resume
+                    </a>
                   </div>
-                </div>  
+                </div>
                 <div
                   className={`${
                     showPersonalInfo ? "block w-full" : "max-xl:hidden"
@@ -233,7 +243,6 @@ export default function RootLayout({
               <div className="p-8 xl:py-12">{children}</div>
             </div>
           </div>
-
         </main>
       </body>
     </html>
