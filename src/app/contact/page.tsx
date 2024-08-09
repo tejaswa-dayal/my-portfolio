@@ -21,6 +21,10 @@ const contactSchema = z.object({
   message: z.string().optional(),
 });
 
+interface CustomDivProps extends React.HTMLAttributes<HTMLDivElement> {
+    disabled?: boolean;
+  }
+
 type FormErrors = {
   name?: any;
   email?: any;
