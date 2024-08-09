@@ -1,0 +1,16 @@
+[
+    {
+        "name" : "Prameyshala",
+        "description" : "PrameyShala is an innovative educational technology platform aimed at assisting students in their academic pursuits, enabling them to succeed in their studies and achieve their educational goals.",
+        "techStack" : ["ReactJS", "Next.JS", "Typescript", "TailwindCSS", "Python", "Django", "GraphQL", "MySQL"],
+        "image" : "/images/prameyshala.png",
+        "link": ""
+    },
+    {
+        "name" : "Advisor",
+        "description" : "Advisor gives random advices by the use of Advice Slip JSON API.",
+        "techStack" : ["HTML", "CSS", "Bootstrap", "Javascript"],
+        "image" : "/images/advisor.png",
+        "link" : ""
+    }
+]

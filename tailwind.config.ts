@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
@@ -12,6 +13,11 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'custom-gradient': 'linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%,0%) 50%)',
+        "hover-gradient" : 'linear-gradient(to bottom right, hsla(45, 100%, 72%, 30%) 0%, hsla(0, 0%, 25%,0%) 50%)'
+      },
+      fontFamily:{
+        sans: ['Poppins', 'sans-serif'],
       },
       colors:{
         "primary": "#121212",
@@ -27,6 +33,6 @@ const config: Config = {
       
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };
 export default config;

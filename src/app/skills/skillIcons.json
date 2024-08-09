@@ -1,0 +1,16 @@
+{
+    "python" : "/skill-icons/python.png",
+    "javascript" : "/skill-icons/javascript.png",
+    "typescript" : "/skill-icons/typescript.png",
+    "django" : "/skill-icons/django.png",
+    "react" : "/skill-icons/react.png",
+    "nextjs" : "/skill-icons/nextjs.png",
+    "tailwindCss" : "/skill-icons/tailwind-css.png",
+    "bootstrap" : "/skill-icons/bootstrap.png",
+    "html" : "/skill-icons/html.png",
+    "css" : "/skill-icons/css.png",
+    "git" : "/skill-icons/git.png",
+    "mysql" : "/skill-icons/mysql.png",
+    "graphQl" : "/skill-icons/graph-ql.png",
+    "rest" : "/skill-icons/rest.png"
+}

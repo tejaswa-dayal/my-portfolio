@@ -2,28 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.icon-box {
-    position: relative;
-    background: linear-gradient(
-        to bottom right, 
-        hsl(0, 0%, 25%) 0%, 
-        hsla(0, 0%, 25%, 0) 50%
-      );
-    width: 2.5rem;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-    z-index: 1;
-  }
-  
-  .icon-box::before {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: hsl(240, 2%, 13%);
-    border-radius: inherit;
-    z-index: -1;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    @apply font-sans;
   }
