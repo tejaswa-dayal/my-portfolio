@@ -16,7 +16,7 @@ export default function Timeline({ experienceDetails }: TimelineProps) {
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       {experienceDetails.map((experience, index) => (
         <li key={index}>
-          {index === 0 ? "" : <hr />}
+          {index === 0 ? "" : <hr className="text-primary-white border-primary-white bg-primary-white"/>}
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export default function Timeline({ experienceDetails }: TimelineProps) {
             </div>
             <p className="text-gray-200 font-light">{experience.description}</p>
           </div>
-          {index === experienceDetails.length - 1 ? "" : <hr />}
+          {index === experienceDetails.length - 1 ? "" : <hr className="text-primary-white border-primary-white bg-primary-white" />}
         </li>
       ))}
     </ul>
