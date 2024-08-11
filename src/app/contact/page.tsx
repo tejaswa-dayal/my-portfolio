@@ -87,6 +87,14 @@ export default function Contact() {
       } finally {
         setIsSubmitting(false);
       }
+      const res = fetch(`/api/message`, {
+        method: "POST",
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
     }
   };
 
