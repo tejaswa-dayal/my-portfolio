@@ -76,7 +76,8 @@ export default function RootLayout({
       </head>
       <body>
         <main className="p-6 md:p-12 xl:p-14 bg-primary min-h-[100vh]">
-          <div className="w-[100vw] px-8 py-4 rounded-xl bg-dark-grey/50 backdrop-blur-md shadow-lg ring-1 ring-black/5 z-20 fixed bottom-0 left-[50%] right-[50%] -translate-x-[50%] flex gap-6 justify-around items-center xl:hidden">
+          {/* Small and Medium Screen Navbar */}
+          <div className="w-[100vw] max-w-[100vw] px-8 py-4 rounded-xl bg-dark-grey/50 backdrop-blur-md shadow-lg ring-1 ring-black/5 z-20 fixed bottom-0 left-0 flex gap-4 md:gap-6 justify-center items-center xl:hidden overflow-x-scroll">
             {Object.values(navHeadings).map((value, index) => (
               <button
                 type="button"
@@ -136,7 +137,6 @@ export default function RootLayout({
                     <img
                       src="/images/myImage.png"
                       alt="Tejaswa"
-                      className="object-contain"
                     />
                   </div>
                   <div className="flex flex-col gap-4 max-md:gap-2">
