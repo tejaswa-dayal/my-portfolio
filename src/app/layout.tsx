@@ -18,6 +18,7 @@ import IconBox from "@/components/IconBox";
 import Link from "next/link";
 import { Toaster } from "react-hot-toast";
 import { metadata } from "@/metadata";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function RootLayout({
   children,
@@ -76,6 +77,7 @@ export default function RootLayout({
       </head>
       <body>
         <main className="p-6 md:p-12 xl:p-14 bg-primary min-h-[100vh]">
+          <Analytics/>
           {/* Small and Medium Screen Navbar */}
           <div className="w-[100vw] max-w-[100vw] px-8 py-4 rounded-xl bg-dark-grey/50 backdrop-blur-md shadow-lg ring-1 ring-black/5 z-20 fixed bottom-0 left-0 flex gap-4 md:gap-6 justify-center items-center xl:hidden overflow-x-scroll">
             {Object.values(navHeadings).map((value, index) => (

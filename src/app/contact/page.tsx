@@ -42,22 +42,14 @@ export default function Contact() {
   const [formData, setFormData] = useState(initValues);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formErrors, setFormErrors] = useState<FormErrors>({});
-  useEffect(() => {
-    console.log("Form data updated:", formData);
-  }, [formData]);
 
-  useEffect(() => {
-    console.log("Form Error data updated:", formErrors);
-  }, [formErrors]);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsSubmitting(true);
     const result = contactSchema.safeParse(formData);
-    console.log("result", result);
 
     if (!result.success) {
-      console.log("Not success");
 
       setFormErrors(result.error.format());
       setIsSubmitting(false);
