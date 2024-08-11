@@ -13,13 +13,13 @@
       "MySQL"
     ],
     "image": "/images/prameyshala.png",
-    "link": ""
+    "link": "https://prameyshala.com/"
   },
   {
     "name": "Advisor",
     "description": "Advisor gives random advices by the use of Advice Slip JSON API.",
     "techStack": ["HTML", "CSS", "Bootstrap", "Javascript"],
     "image": "/images/advisor.png",
-    "link": ""
+    "link": "https://tejaswa-dayal.github.io/Advisor/"
   }
 ]
