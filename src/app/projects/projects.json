@@ -16,6 +16,18 @@
     "link": "https://prameyshala.com/"
   },
   {
+    "name": "Chowdeck - Landing Page",
+    "description": "Chowdeck – a sleek landing page clone crafted from Figma, showcasing modern design and responsive UI.",
+    "techStack": [
+      "ReactJS",
+      "Javascript",
+      "TailwindCSS",
+      "Motion",
+    ],
+    "image": "/images/Chowdeck.png",
+    "link": "https://chowdeck-phi.vercel.app/"
+  },
+  {
     "name": "Advisor",
     "description": "Advisor gives random advices by the use of Advice Slip JSON API.",
     "techStack": ["HTML", "CSS", "Bootstrap", "Javascript"],
