@@ -15,11 +15,11 @@
       "Python",
       "Django",
       "Django Rest Framework",
-      "SQLite 3",
+      "SQLite 3"
     ],
     "image": "/images/tastenest.png",
     "link": "https://taste-nest-seven.vercel.app/"
-  }
+  },  
   {
     "name": "Prameyshala",
     "description": "PrameyShala is an innovative educational technology platform aimed at assisting students in their academic pursuits, enabling them to succeed in their studies and achieve their educational goals.",
