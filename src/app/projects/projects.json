@@ -4,18 +4,18 @@
     "description": "TasteNest is a modern food-ordering web application built with a Django backend and React frontend, leveraging Redux for state management. Users can browse dishes, manage cart contents, reserve tables, and complete checkout flows—ensuring a seamless, responsive experience across devices.",
     "techStack": [
       "ReactJS",
-      "Redux Toolkit",
+      "Motion",
+      "zod",
       "Typescript",
       "TailwindCSS",
-      "Motion",
-      "React-router-dom",
-      "zod",
-      "React Hook Form",
+      "Redux Toolkit",
       "React Hot Toast",
+      "React Hook Form",
+      "React-router-dom",
       "Python",
       "Django",
-      "Django Rest Framework",
-      "SQLite 3"
+      "SQLite 3",
+      "Django Rest Framework"
     ],
     "image": "/images/tastenest.png",
     "link": "https://taste-nest-seven.vercel.app/"
